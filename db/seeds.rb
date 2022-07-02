@@ -9,16 +9,17 @@
 # Actor.create(first_name: FFaker::Name.first_name, last_name: FFaker::Name.last_name, known_for: FFaker::Movie.title)
 # Actor.create(first_name: FFaker::Name.first_name, last_name: FFaker::Name.last_name, known_for: FFaker::Movie.title)
 
-Movie.create(Title: FFaker::Moive.title, Year: FFaker::Vehicle.year, Plot: FFaker::Book.description)
-Movie.create(Title: FFaker::Moive.title, Year: FFaker::Vehicle.year, Plot: FFaker::Book.description)
-Movie.create(Title: FFaker::Moive.title, Year: FFaker::Vehicle.year, Plot: FFaker::Book.description)
-Movie.create(Title: FFaker::Moive.title, Year: FFaker::Vehicle.year, Plot: FFaker::Book.description)
-Movie.create(Title: FFaker::Moive.title, Year: FFaker::Vehicle.year, Plot: FFaker::Book.description)
-Movie.create(Title: FFaker::Moive.title, Year: FFaker::Vehicle.year, Plot: FFaker::Book.description)
-Movie.create(Title: FFaker::Moive.title, Year: FFaker::Vehicle.year, Plot: FFaker::Book.description)
-Movie.create(Title: FFaker::Moive.title, Year: FFaker::Vehicle.year, Plot: FFaker::Book.description)
-Movie.create(Title: FFaker::Moive.title, Year: FFaker::Vehicle.year, Plot: FFaker::Book.description)
-Movie.create(Title: FFaker::Moive.title, Year: FFaker::Vehicle.year, Plot: FFaker::Book.description)
+Movie.create(title: FFaker::Movie.title, year: FFaker::Vehicle.year, plot: FFaker::Book.description)
+Movie.create(title: FFaker::Movie.title, year: FFaker::Vehicle.year, plot: FFaker::Book.description)
+Movie.create(title: FFaker::Movie.title, year: FFaker::Vehicle.year, plot: FFaker::Book.description)
+Movie.create(title: FFaker::Movie.title, year: FFaker::Vehicle.year, plot: FFaker::Book.description)
+Movie.create(title: FFaker::Movie.title, year: FFaker::Vehicle.year, plot: FFaker::Book.description)
+Movie.create(title: FFaker::Movie.title, year: FFaker::Vehicle.year, plot: FFaker::Book.description)
+Movie.create(title: FFaker::Movie.title, year: FFaker::Vehicle.year, plot: FFaker::Book.description)
+Movie.create(title: FFaker::Movie.title, year: FFaker::Vehicle.year, plot: FFaker::Book.description)
+Movie.create(title: FFaker::Movie.title, year: FFaker::Vehicle.year, plot: FFaker::Book.description)
+Movie.create(title: FFaker::Movie.title, year: FFaker::Vehicle.year, plot: FFaker::Book.description)
+Movie.create(title: FFaker::Movie.title, year: FFaker::Vehicle.year, plot: FFaker::Book.description)
 
 # ingore this I was cheating ....
 # _______________________________________________________
