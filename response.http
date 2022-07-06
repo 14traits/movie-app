@@ -1,16 +1,53 @@
-GET   http://localhost:3000/find/22
-###
+### INDEX
+GET   http://localhost:3000/actors
 
-POST http://localhost:3000/find/actor/
+### SHOW
+GET   http://localhost:3000/actors/10
+
+### UPDATE
+POST http://localhost:3000/actors/10
 Content-Type: application/json
 
 {
 "last_name": "Cartwright"
 }
 
-###
+### CREATE
+POST http://localhost:3000/actors.json
+Content-Type: application/json
 
+{
+  "first_name": "Test name",
+  "last_name": "blah blah",
+  "known_for": "something"
+}
+### DESTROY
+DELETE http://localhost:3000/actors/8.json
+
+
+
+### INDEX
 GET http://localhost:3000/movies.json
 
-###
+### SHOW
 GET http://localhost:3000/movies/5.json
+
+### UPDATE
+POST http://localhost:3000/movies/10
+Content-Type: application/json
+
+{
+"title": "The Blob"
+}
+
+### CREATE
+POST http://localhost:3000/movies.json
+Content-Type: application/json
+
+{
+  "title": "Test name",
+  "year": 1960,
+  "plot": "something"
+}
+### DESTROY
+DELETE http://localhost:3000/movies/8.json
