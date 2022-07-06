@@ -5,7 +5,7 @@ GET   http://localhost:3000/actors
 GET   http://localhost:3000/actors/10
 
 ### UPDATE
-POST http://localhost:3000/actors/10
+PATCH http://localhost:3000/actors/10
 Content-Type: application/json
 
 {
@@ -22,7 +22,7 @@ Content-Type: application/json
   "known_for": "something"
 }
 ### DESTROY
-DELETE http://localhost:3000/actors/8.json
+DELETE http://localhost:3000/actors/28.json
 
 
 
@@ -33,7 +33,7 @@ GET http://localhost:3000/movies.json
 GET http://localhost:3000/movies/5.json
 
 ### UPDATE
-POST http://localhost:3000/movies/10
+PATCH http://localhost:3000/movies/10
 Content-Type: application/json
 
 {
@@ -50,4 +50,4 @@ Content-Type: application/json
   "plot": "something"
 }
 ### DESTROY
-DELETE http://localhost:3000/movies/8.json
+DELETE http://localhost:3000/movies/34.json
