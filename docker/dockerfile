@@ -1,0 +1,19 @@
+FROM ruby:3.1.2
+RUN apt-get update -qq && apt-get install -y nodejs postgresql-client
+# Set the working director to /myapp
+RUN mkdir /myapp
+WORKDIR /myapp
+COPY Gemfile /myapp/Gemfile
+COPY Gemfile.lock /myapp/Gemfile.lock
+COPY entrypoint.sh /usr/bin/
+RUN bundle install
+# Copy the current directory contents into the container at /myapp
+COPY . /myapp
+# Add a script to be executed everytime the container start.COPY entrypoint.sh /usr/bin
+RUN chmod +x /usr/bin/entrypoint.sh
+ENTRYPOINT ["entrypoint.sh"]
+EXPOSE 3000
+# Start the main process. 
+# Keep reading to see why we commented this line out! 
+# CMD ["rails", "server", "-b", "0.0.0.0"]
+CMD ["bundle", "exec", "rails", "s"]
