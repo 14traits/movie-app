@@ -1,11 +1,7 @@
 class MoviesController < ApplicationController
   def index
-    array = Array.new
     movies = Movie.all
-    movies.each do |movie|
-      array << { id: movie.id, title: movie.title, year: movie.year, plot: movie.plot, director: movie.director, english: movie.english }
-    end
-    render json: array.as_json
+    render json: movies.as_json
   end
 
   def show
