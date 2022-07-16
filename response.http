@@ -1,3 +1,5 @@
+@jwt = "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTgwOTE3Mjd9.Oi2Xp_ugn12DZFpF6dweWyanukt8s8Hu_o9FSb92FAo"
+
 ### INDEX
 GET   http://localhost:3000/actors
 
@@ -61,4 +63,13 @@ Content-Type: application/json
   "email": "john@test.com",
   "password": "password",
   "password_confirmation": "password"
+}
+
+### Sessions create (login)
+POST http://localhost:3000/sessions.json
+Content-Type: application/json
+
+{
+  "email": "test@test.com",
+  "password": "password"
 }
