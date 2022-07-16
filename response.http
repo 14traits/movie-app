@@ -1,5 +1,7 @@
 # admin =
-@jwt = "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTgwOTE3Mjd9.Oi2Xp_ugn12DZFpF6dweWyanukt8s8Hu_o9FSb92FAo"
+@jwt_admin = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NTgwOTI4NzJ9.GFWVrt4-SY4yjJDQGxMv4WR8cRlGzdZcmZGKhupVkLg
+
+@jwt_user = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTgwOTI4ODd9.6ugwWFS-UHLKHmeRpVJ0I9vNaPPXzFUrj7kLwtnkX10
 
 ### INDEX
 GET   http://localhost:3000/actors
@@ -9,16 +11,16 @@ GET   http://localhost:3000/actors/10
 
 ### UPDATE
 PATCH http://localhost:3000/actors/10
-Authorization: Bearer {{jwt}}
+Authorization: Bearer {{jwt_admin}}
 Content-Type: application/json
 
 {
-"last_name": "Cartwright"
+"last_name": "Musk"
 }
 
 ### CREATE
 POST http://localhost:3000/actors.json
-Authorization: Bearer {{jwt}}
+Authorization: Bearer {{jwt_admin}}
 Content-Type: application/json
 
 {
@@ -28,7 +30,7 @@ Content-Type: application/json
 }
 ### DESTROY
 DELETE http://localhost:3000/actors/28.json
-Authorization: Bearer {{jwt}}
+Authorization: Bearer {{jwt_admin}}
 
 
 
@@ -49,7 +51,7 @@ Content-Type: application/json
 
 ### CREATE
 POST http://localhost:3000/movies.json
-Authorization: Bearer {{jwt}}
+Authorization: Bearer {{jwt_admin}}
 Content-Type: application/json
 
 {
@@ -58,8 +60,8 @@ Content-Type: application/json
   "plot": "something"
 }
 ### DESTROY
-DELETE http://localhost:3000/movies/34.json
-Authorization: Bearer {{jwt}}
+DELETE http://localhost:3000/movies/35.json
+Authorization: Bearer {{jwt_admin}}
 
 ### Users create (signup)
 POST http://localhost:3000/users.json
@@ -77,6 +79,6 @@ POST http://localhost:3000/sessions.json
 Content-Type: application/json
 
 {
-  "email": "john@test.com",
+  "email": "test@test.com",
   "password": "password"
 }
