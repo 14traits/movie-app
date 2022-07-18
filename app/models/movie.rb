@@ -1,7 +1,7 @@
 class Movie < ApplicationRecord
   has_many :actors
-  has_many :movie_genre
-  has_many :genre, through: :movie_genre
+  has_many :movie_genres
+  has_many :genres, through: :movie_genres
   # validates :title, presence: true, length:
   # validates :director, presence: true, length: { minimum: 2 }
   # validates :plot, presence: true
