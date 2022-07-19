@@ -1,0 +1,10 @@
+{
+  id: @movie_serializer.id,
+  id: @movie_serializer.id,
+  title: @movie_serializer.title,
+  year: @movie_serializer.year,
+  plot: @movie_serializer.plot,
+  english: @movie_serializer.english,
+  created_at: @movie_serializer.created_at,
+  updated_at: @movie_serializer.updated_at
+}

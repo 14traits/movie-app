@@ -1,0 +1,11 @@
+@movie_serializers.map do |movie_serializer|
+  {
+    id: movie_serializer.id,
+    id: movie_serializer.id,
+    title: movie_serializer.title,
+    year: movie_serializer.year,
+    plot: movie_serializer.plot,
+    english: movie_serializer.english,
+    url: movie_serializer_url(movie_serializer, format: :json)
+  }
+end
