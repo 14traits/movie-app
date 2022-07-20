@@ -1,10 +1,13 @@
 # admin =
-@jwt_admin = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NTgwOTI4NzJ9.GFWVrt4-SY4yjJDQGxMv4WR8cRlGzdZcmZGKhupVkLg
+@jwt_admin = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NTgzNzU2MDJ9.-4TH1wvkwUWDsEpAf6L0tANQ_GhR2q_crM4_Z7G8PEo
 
-@jwt_user = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTgwOTI4ODd9.6ugwWFS-UHLKHmeRpVJ0I9vNaPPXzFUrj7kLwtnkX10
+@jwt_user = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTgzNzU1Njd9.l7VMFRjtsoYoysSQ6QfFPPXo6V4DpMVA2X_AjPbNCJY
 
 ### INDEX
 GET   http://localhost:3000/actors
+
+### INDEX
+GET   http://localhost:3000/movies
 
 ### SHOW
 GET   http://localhost:3000/actors/10
@@ -79,6 +82,16 @@ POST http://localhost:3000/sessions.json
 Content-Type: application/json
 
 {
-  "email": "test@test.com",
+  "email": "john@test.com",
   "password": "password"
+}
+
+### CREATE
+POST http://localhost:3000/movie_genres.json
+Authorization: Bearer {{jwt_admin}}
+Content-Type: application/json
+
+{
+  "movie_id": 10,
+  "genre_id": 4
 }
