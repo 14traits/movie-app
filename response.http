@@ -45,7 +45,7 @@ GET http://localhost:3000/movies/5.json
 
 ### UPDATE
 PATCH http://localhost:3000/movies/10
-Authorization: Bearer {{jwt}}
+Authorization: Bearer {{jwt_admin}}
 Content-Type: application/json
 
 {
